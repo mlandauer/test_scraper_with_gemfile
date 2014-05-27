@@ -27,7 +27,7 @@ def scrape_table(doc, comment_url)
       'date_scraped' => Date.today.to_s
     }
 
-    #p record
+    p record
     # For simplicity sake for the time being always save the data (even if it's not a new application)
     ScraperWiki.save_sqlite(['council_reference'], record)
   end
